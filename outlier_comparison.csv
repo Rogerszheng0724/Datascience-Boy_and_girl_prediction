@@ -1,0 +1,13 @@
+Column,Scenario,LowerBound,UpperBound,NormalCount,TotalCount
+height,Scenario_1_0.2_0.8,140.5,200.5,339,349
+weight,Scenario_1_0.2_0.8,20,108,325,338
+iq,Scenario_1_0.2_0.8,5.9,253.1,344,344
+fb_friends,Scenario_1_0.2_0.8,-906,1878,324,346
+height,Scenario_2_0.15_0.85,134,206,339,349
+weight,Scenario_2_0.15_0.85,7.325,121.125,329,338
+iq,Scenario_2_0.15_0.85,-50,318,344,344
+fb_friends,Scenario_2_0.15_0.85,-1294.25,2423.75,330,346
+height,Scenario_3_0.25_0.75,148.5,192.5,335,349
+weight,Scenario_3_0.25_0.75,28.375,99.375,321,338
+iq,Scenario_3_0.25_0.75,32.5,212.5,344,344
+fb_friends,Scenario_3_0.25_0.75,-550,1450,317,346
