@@ -1,6 +1,6 @@
 # Boy or Girl Prediction 2025
 
-[![banner](https://ppt.cc/fiKKfx@.png)
+![banner](https://ppt.cc/fiKKfx@.png)
 
 本專案參加 Kaggle 比賽：[Boy or Girl 2025](https://www.kaggle.com/competitions/boy-or-girl-2025-new)，目標是透過 **結構化資料 + 自我介紹文字** 來預測性別。我們針對 **資料前處理、特徵工程與分類模型** 建立了一套完整流程。
 
