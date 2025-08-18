@@ -1,31 +1,22 @@
 # Boy or Girl Prediction 2025
 
-[![banner](https://ppt.cc/f8NsTx)](https://www.kaggle.com/competitions/boy-or-girl-2025-new)
+[![banner](https://ppt.cc/fiKKfx@.png)
 
 本專案參加 Kaggle 比賽：[Boy or Girl 2025](https://www.kaggle.com/competitions/boy-or-girl-2025-new)，目標是透過 **結構化資料 + 自我介紹文字** 來預測性別。我們針對 **資料前處理、特徵工程與分類模型** 建立了一套完整流程。
 
 ---
 
-## 📂 專案結構
-- `data/` 原始與處理後資料
-- `notebooks/` 資料分析與模型實驗
-- `src/` 主程式碼
-- `models/` 訓練好的模型
-- `README.md` 專案說明文件
-
----
 
 ## 🚀 方法論
 
 ### 1. 資料前處理
 - **缺失值補值 (Imputation)**  
   - 測試方法：Mean, Median, KNN, EM, GAIN  
-  - **最佳結果**：GAIN（特別在 height 特徵上效果最佳）【圖片，p.5 Graph 1】
+  - **最佳結果**：GAIN（特別在 height 特徵上效果最佳）
 
 - **異常值處理 (Outlier Treatment)**  
   - 使用 IQR (Interquartile Range)  
   - 閾值 = 0.2 IQR → 保留合理極端值，排除輸入錯誤值  
-  - 【圖片，p.6 Graph 2】
 
 - **文字欄位 (self_intro)**  
   - 預處理：去除停用詞、縮寫展開、標點清理、大小寫統一、拼字校正  
@@ -42,7 +33,7 @@
   - 數值變數 vs. 二元類別 → Point-biserial correlation  
   - 類別變數 vs. 類別 → Cramér’s V  
   - **選出高度相關特徵**：Height (r = -0.571), Weight (r = -0.404)  
-  - 【圖片，p.14 Graph 3】
+  - ![banner](https://ppt.cc/fa6OYx@.png)
 
 - **正規化**  
   - 嘗試 Z-score normalization  
@@ -66,7 +57,7 @@
 - **最佳組合**  
   - **XGBoost** + 前 150 個最重要特徵  
   - Validation split = 0.3 → 最佳泛化效果  
-  - 【圖片，p.20 Graph 4】
+  - ![banner](https://ppt.cc/fg9q9x@.png)
 
 ---
 
@@ -74,14 +65,6 @@
 - XGBoost + GAIN + SBERT (all-distilroberta-v1) → **最佳整體表現**
 - 強化模型泛化能力，避免過度依賴少數異常值
 - Deep Learning 模型在小資料集上效果不佳，僅作為對照
-
----
-
-## 🧩 工作分工
-| 成員 | 貢獻 |
-|------|------|
-| Rogers Zheng | 實驗設計、文獻回顧、缺失值補值、模型訓練、文件撰寫 (50%) |
-| Brian Zou   | 實驗設計、文獻回顧、模型訓練、文件撰寫 (50%) |
 
 ---
 
