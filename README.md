@@ -21,7 +21,7 @@
 - **文字欄位 (self_intro)**  
   - 預處理：去除停用詞、縮寫展開、標點清理、大小寫統一、拼字校正  
   - 向量化方式比較：TF-IDF / Word2Vec / Sentence-BERT (SBERT)  
-  - **最佳結果**：`all-distilroberta-v1`:contentReference[oaicite:1]{index=1}
+  - **最佳結果**：`all-distilroberta-v1`
 
 - **類別不平衡處理**  
   - 採用 SMOTE 過採樣平衡資料
@@ -73,8 +73,6 @@
 - Yoon et al. (2018). **GAIN: Missing Data Imputation using Generative Adversarial Nets**. arXiv:1806.02920  
 - Reimers & Gurevych (2019). **Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks**. EMNLP-IJCNLP  
 - Breiman (2001). **Random Forests**. Machine Learning  
-
-完整文獻請見原始文件:contentReference[oaicite:2]{index=2}
 
 ---
 
